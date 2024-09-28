@@ -21,13 +21,24 @@ body {
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     margin-right: 3rem;
     border: none;
     border-radius: 15px;
     background: black;
     color:white;
     height: 2.5rem;
-    width: 6rem;
+    width: 7rem;
+    transition: all .5s ease;
+}
+
+.button:hover {
+    height: 3rem;
+    width: 7.5rem;
+    
 }
 
 #middle {
@@ -54,6 +65,8 @@ body {
 
 .social{
     color: blue;
+    height: 30px;
+    width: 30px;
 }
 
 .open-sans {
