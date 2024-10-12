@@ -5,7 +5,7 @@ body {
 }
 
 #header {
-    background: grey;
+    background: #253c7f;
     width: 100%;
     height: 15vh;
     display: flex;
@@ -13,11 +13,32 @@ body {
     align-items: center;
 }
 
-#logo {
+#logoLink {
+    display: flex;
+    align-items: center;
     width: auto;
     height: 90%;
-    border-radius: 50%;
     margin-left: 3rem;
+}
+
+#menu {
+    background: black;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#menuItems {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
 }
 
 .button {
@@ -28,8 +49,8 @@ body {
     margin-right: 3rem;
     border: none;
     border-radius: 15px;
-    background: black;
-    color:white;
+    background: white;
+    color: #253c7f;
     height: 2.5rem;
     width: 7rem;
     transition: all .5s ease;
@@ -38,7 +59,7 @@ body {
 .button:hover {
     height: 3rem;
     width: 7.5rem;
-    
+
 }
 
 #middle {
@@ -48,6 +69,7 @@ body {
     justify-content: start;
     align-items: center;
 }
+
 .cover {
     height: 100%;
     width: 100%;
@@ -63,7 +85,7 @@ body {
     align-items: center;
 }
 
-.social{
+.social {
     color: blue;
     height: 30px;
     width: 30px;
