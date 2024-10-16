@@ -35,10 +35,16 @@ body {
 #menuItems {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
     list-style-type: none;
+    margin-bottom: 0;
+}
+
+.menuLinks {
+    color: white;
+    text-decoration: none;
 }
 
 .button {
@@ -63,10 +69,11 @@ body {
 }
 
 #middle {
+    background: grey;
     height: 70vh;
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
 }
 
