@@ -1,8 +1,12 @@
 import React from "react";
+import Header from '../Header/Header'
+import { Footer } from "../Footer/Footer";
 
 export const Qoutes = () => {
 
     return (
+        <>
+        <Header />
         <div id="middle">
             <form method="post" action="./send_email.php">
                 <label for="name">Nombre:</label>
@@ -23,5 +27,7 @@ export const Qoutes = () => {
                 <button type="submit">Someter</button>
             </form>
         </div>
+        <Footer />
+        </>
     )
 }

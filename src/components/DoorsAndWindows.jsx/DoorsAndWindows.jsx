@@ -1,9 +1,13 @@
 import React from "react";
+import Header from '../Header/Header'
+import { Footer } from "../Footer/Footer";
 
 
 
 export const DoorsAndWindows = () => {
     return (
+        <>
+        <Header />
         <div id="middle">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
@@ -25,5 +29,7 @@ export const DoorsAndWindows = () => {
                 </button>
             </div>
         </div>
+        <Footer />
+        </>
     )
 }

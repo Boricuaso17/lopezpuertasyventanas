@@ -1,8 +1,12 @@
 import React from "react";
+import Header from '../Header/Header'
+import { Footer } from "../Footer/Footer";
 
 export const AboutUs = () => {
 
     return (
+        <>
+        <Header />
     <div id="middle">
         <h2> Quienes Somos</h2>
             <p>
@@ -18,5 +22,8 @@ export const AboutUs = () => {
                 
                 ¡Ven y visítanos en nuestro showroom en Río Grande, al lado de la tienda Lanco!</p>
         {/* <!-- <img src="./images/homePhoto1.jpg" class="cover" /> --> */}
-    </div>)
+    </div>
+    <Footer />
+    </>
+    )
 }

@@ -1,8 +1,11 @@
 import React from "react";
+import Header from '../Header/Header'
+import { Footer } from "../Footer/Footer";
 
 export const Home = () => {
 
     return (<>
+    <Header />
         <div id="middle">
             <div id="carouselExampleFade" class="carousel slide carousel-fade">
                 <div class="carousel-inner">
@@ -36,6 +39,7 @@ export const Home = () => {
 
             <a >Ver Productos y Servicios</a>
         </div>
+        <Footer />
     </>
     )
 }
