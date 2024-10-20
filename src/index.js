@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from '../src/components/Home/Home';
 
 function App() {
   return (
     <div>
-      <h1>Hello, React with npm!</h1>
+      <Home />
     </div>
   );
 }
