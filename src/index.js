@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Home from '../src/components/Home/Home';
+import ReactDOM from 'react-dom/client'; // Updated import
+import { Home } from '../src/components/Home/Home'
 
 function App() {
   return (
@@ -10,4 +10,6 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Use createRoot instead of render
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);

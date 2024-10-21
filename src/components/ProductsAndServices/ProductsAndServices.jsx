@@ -1,6 +1,8 @@
 import React from "react";
-import Header from '../Header/Header'
+import { Header }  from '../Header/Header'
 import { Footer } from "../Footer/Footer";
+import styles from '../../static/styles.module.css'; // For CSS Modules
+
 
 
 export const ProductsAndServices = () => {

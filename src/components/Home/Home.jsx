@@ -1,27 +1,29 @@
 import React from "react";
-import Header from '../Header/Header'
+import { Header }  from '../Header/Header'
 import { Footer } from "../Footer/Footer";
+import styles from '../../static/styles.module.css'; // For CSS Modules
+
 
 export const Home = () => {
 
     return (<>
     <Header />
         <div id="middle">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img id="puertas" src="./images/homePhoto1.jpg" class="d-block w-100" alt="..." />
+            <div id="carouselExampleFade" className="carousel slide carousel-fade">
+                <div className={styles.carousel-inner}>
+                    <div className={`${styles.carousel-item} ${styles.active}`}>
+                        <img id="puertas" src="./images/homePhoto1.jpg" className="d-block w-100" alt="..." />
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev" onclick="carouselPhotos('inicio')">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev" onClick={() => {carouselPhotos('inicio')}}>
+                    <span className={styles.carousel-control-prev-icon} aria-hidden="true"></span>
+                    <span className="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next" onclick="carouselPhotos('inicio')">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next" onClick={() => {carouselPhotos('inicio')}}>
+                    <span className={styles.carousel-control-next-icon} aria-hidden="true"></span>
+                    <span className="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
